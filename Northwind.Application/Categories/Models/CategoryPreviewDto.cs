@@ -11,6 +11,7 @@ namespace Northwind.Application.Categories.Models
         public CategoryPreviewDto()
         {
             Products = new List<ProductPreviewDto>();
+            // adding a new comment
         }
 
         public int CategoryId { get; set; }
