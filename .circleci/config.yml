@@ -7,13 +7,13 @@ jobs:
       - checkout
       - 
         run: 
-          command: dotnet restore
-          name: Restore packages
+          command: "dotnet restore"
+          name: "Restore packages"
       - 
         run: 
-          command: dotnet build
-          name: Build App
+          command: "dotnet build"
+          name: "Build App"
       - 
         run: 
-          command: dotnet run
-          name: Run App
+          command: "dotnet run"
+          name: "Run App"
