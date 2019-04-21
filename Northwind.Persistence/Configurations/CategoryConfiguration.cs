@@ -8,7 +8,6 @@ namespace Northwind.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Category> builder)
         {
-            // todo comment
             builder.Property(e => e.CategoryId).HasColumnName("CategoryID");
 
             builder.Property(e => e.CategoryName)
