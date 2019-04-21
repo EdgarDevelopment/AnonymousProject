@@ -2,8 +2,11 @@ version: 2
 jobs:
   build:
     docker:
-      - image: mcr.microsoft.com/dotnet/core/sdk:2.2
+      - image: microsoft/dotnet:2.2-sdk
     steps:
+      - run:
+         name: Installing Node
+         command: curl -sL https://deb.nodesource.com/setup_10.x | bash - && apt-get install -y nodejs
       - checkout
       - run: find .
       - run: dotnet restore
