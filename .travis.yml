@@ -1,7 +1,6 @@
 language: csharp
-solution: Northwind.sln
 mono: none
-dotnet: 2.0.0
+dotnet: 2.2.100
 
 install:
 - dotnet restore
