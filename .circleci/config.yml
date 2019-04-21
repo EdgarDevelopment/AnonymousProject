@@ -10,4 +10,4 @@ dependencies:
 test:
   pre:
     - dotnet --version
-- dotnet build ./Northwind.sln
+    - dotnet build ./Northwind.sln
